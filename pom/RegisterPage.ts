@@ -44,7 +44,7 @@ export default class RegisterPage extends BasePage {
         default:
             throw new Error(`Unsupported field name: ${fieldName}`);
         }
-    await expect(elementToCheck).toHaveJSProperty('validationMessage', 'Заполните это поле.');
+    await expect(elementToCheck).toHaveJSProperty('validationMessage', 'Please fill out this field.');
     }
 
     async verifyErrorNotificationIsShown() {

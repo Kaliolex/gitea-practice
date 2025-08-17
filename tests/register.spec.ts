@@ -48,14 +48,4 @@ test.describe('Register tests', () => {
         await expect(page).toHaveURL('/user/login')
     });
 
-    /*test('Delete recent user', async ({page}) => {
-        await (page.goto('/user/settings/account'));
-        await (page.locator("//input[@id='password-confirmation']")).fill(users.testUser2.password);
-        await (page.locator("//button[normalize-space()='Confirm Deletion']")).click();
-        await (page.locator("//div[@id='delete-account']//button[@class='ui primary ok button'][normalize-space()='Yes']")).click();
-        await expect(page).toHaveURL('/');
-    });*/
-
-
-
 });
